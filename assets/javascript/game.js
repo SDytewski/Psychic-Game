@@ -20,7 +20,7 @@ document.onkeyup = function () {
 //Resets game function  
   var resetGuesses = function () {
   GuessesLeft = 9; // reset our model
-  document.querySelector("#Guesses").innerHTML = ' '; // reset our view
+  document.querySelector("#Guesses").innerHTML =  'Your Guesses So Far: '; // reset our view
   }
  
   
@@ -35,7 +35,7 @@ document.onkeyup = function () {
  
   else if (GuessesLeft == 0) {
       losses++;
-      
+     
       resetGuesses();
   }
  
