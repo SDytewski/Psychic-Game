@@ -20,7 +20,7 @@ document.onkeyup = function () {
 //Resets game function  
   var resetGuesses = function () {
   GuessesLeft = 9; // reset our model
-  document.querySelector("#Guesses").innerHTML = ''; // reset our view
+  document.querySelector("#Guesses").innerHTML = ' '; // reset our view
   }
  
   
@@ -32,17 +32,20 @@ document.onkeyup = function () {
       wins++;
       resetGuesses();
   }
+ 
   else if (GuessesLeft == 0) {
       losses++;
-      GuessesLeft = 9;
+      
       resetGuesses();
   }
-  else if (yourGuess.length < 0) {
-  }
+ 
+  
+ 
   else {
       GuessesLeft--;
   }
 
+  }
 
   //Scoreboard  
   var score =
@@ -55,5 +58,5 @@ document.onkeyup = function () {
   document.querySelector("#game").innerHTML = score;
   var yourGuess =  " " + yourGuess;
   document.querySelector("#Guesses").innerHTML += yourGuess;
-  }
+  
 }

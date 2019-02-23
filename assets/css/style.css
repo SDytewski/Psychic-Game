@@ -1,14 +1,20 @@
-body { text-align: center;
+body { 
         color:red;
         font-family: georgia,  "Times New Roman", Times, serif;
         background-color: black;
-        padding-top: 40px;
+        padding-top: 10px;
         line-height: 1.6;
+        margin: 0 auto;
 
 }
 
-img { float: left;
-      padding-left: 20px;  
+p { padding-left: 15px;
+
+
+}
+
+img { 
+      padding-left: 460px;  
 
 
 
@@ -16,7 +22,8 @@ img { float: left;
 
 
 h1 { font-size: 40px;
-
+     margin-left: 20px;   
+     
 
 
 }
